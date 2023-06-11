@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Discord Bot Ping System", "Discord Bot Ping System\Discord Bot Ping System.pyproj", "{A1934408-2041-442D-999D-E03F1A1C2809}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1934408-2041-442D-999D-E03F1A1C2809}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1934408-2041-442D-999D-E03F1A1C2809}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {448C1D58-C79A-4893-8C24-025319D5E75F}
+	EndGlobalSection
+EndGlobal
