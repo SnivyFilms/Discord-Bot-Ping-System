@@ -21,7 +21,7 @@ intents = discord.Intents.default()
 client = MyClient(intents=intents)
 
 
-EmbedFooter = 'Serperior Pinging Services | Version 2.1.5 | -Snivy Films'
+EmbedFooter = 'Serperior Pinging Services | Version 2.1.6 | -Snivy Films'
 
 @client.event
 async def on_ready():
