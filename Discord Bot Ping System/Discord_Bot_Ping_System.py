@@ -29,10 +29,10 @@ async def on_ready():
     print(f'{client} has successfully connected')
 
 # List of customizable messages
-with open("messages.txt", "r") as f:
+with open("messages.txt", "r", encoding="utf-8") as f:
     messages = [line.strip() for line in f]
 # List of customizable gifs
-with open("gifs.txt", "r") as f:
+with open("gifs.txt", "r", encoding="utf-8") as f:
     gifs = [line.strip() for line in f]
 
 @client.event
