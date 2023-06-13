@@ -21,7 +21,7 @@ intents = discord.Intents.default()
 client = MyClient(intents=intents)
 
 
-EmbedFooter = 'Serperior Pinging Services | Version 2.1.3 | -Snivy Films'
+EmbedFooter = 'Serperior Pinging Services | Version 2.1.5 | -Snivy Films'
 
 @client.event
 async def on_ready():
@@ -82,7 +82,7 @@ async def self(interaction: discord.Interaction, gif:str):
         with open("gifs.txt", "r") as f:
             gifs = [line.strip() for line in f]
     except UnicodeEncodeError:
-        embed = discord.Embed(title="Error Code 3", description="The guf could not be added because the link is not in the UTF-8 format. Please try again. If you are sure that the message is in UTF-8 format please contact the bot handler.", color=0xff0000)
+        embed = discord.Embed(title="Error Code 3", description="The gif could not be added because the link is not in the UTF-8 format. Please try again. If you are sure that the message is in UTF-8 format please contact the bot handler.", color=0xff0000)
         embed.set_footer(text= EmbedFooter)
         await interaction.response.send_message(embed=embed)
 
