@@ -34,6 +34,9 @@ with open("messages.txt", "r", encoding="utf-8") as f:
 # List of customizable gifs
 with open("gifs.txt", "r", encoding="utf-8") as f:
     gifs = [line.strip() for line in f]
+# List of logs
+with open("logs.txt", "r", encoding="utf-8") as f:
+    logs = [line.strip() for line in f]
 
 @client.event
 async def on_message(message):
@@ -59,6 +62,8 @@ async def self(interaction: discord.Interaction, message:str):
     try:
         with open("messages.txt", "a", encoding='utf-8') as f:
             f.write(message + "\n")
+        with open("logs.txt", "a", encoding='utf-8') as f:
+            f.write(f"{datatime.now()} - {interaction.user} added a new message: {message}\n")
         embed = discord.Embed(title="New Ping Trigger Message", description=f"{interaction.user.mention} - You have sucessfully added a new message: {message}", color=0x00ffbd)
         embed.set_footer(text= EmbedFooter)
         await interaction.response.send_message(embed=embed)
@@ -75,6 +80,8 @@ async def self(interaction: discord.Interaction, gif:str):
     try:
         with open("gifs.txt", "a", encoding='utf-8') as f:
             f.write(gif + "\n")
+         with open("logs.txt", "a", encoding='utf-8') as f:
+            f.write(f"{datatime.now()} - {interaction.user} added a new gif: {gif}\n")
         embed = discord.Embed(title="New Ping Trigger Message", description=f"{interaction.user.mention} - You have sucessfully added a new gif", color=0x00ffbd)
         embed.set_footer(text=EmbedFooter)
         embed.set_image(url=gif)
@@ -90,12 +97,14 @@ async def self(interaction: discord.Interaction, gif:str):
 @client.tree.command(name="message-count", description="Get the amount of messages for the ping trigger")
 async def self(interaction: discord.Interaction):
     try:
-        with open("messages.txt", "r") as f:
+        with open("messages.txt", "r", encoding='utf-8') as f:
             messages = [line.strip() for line in f]
             count = len(messages)
             embed = discord.Embed(title="Message Count", description=f"{interaction.user.mention} - There are {count} messages in the ping trigger messages file", color=0x00ffbd)
             embed.set_footer(text=EmbedFooter)
             await interaction.response.send_message(embed=embed)
+            with open("logs.txt", "a", encoding="utf-8") as f:
+                f.write(f"{datetime.now()} - {interaction.user} checked the message count\n")
     except Exception as e:
         embed = discord.Embed(title="Error Code 2", description=f"Something has gone critically wrong. Contact the bot master immediately. Include what you were doing to cause the error to occur", color=0xff0000)
         embed.set_footer(text=EmbedFooter)
@@ -105,12 +114,14 @@ async def self(interaction: discord.Interaction):
 @client.tree.command(name="gif-count", description="Get the amount of gifs for the ping trigger")
 async def self(interaction: discord.Interaction):
     try:
-        with open("gifs.txt", "r") as f:
+        with open("gifs.txt", "r", encoding='utf-8') as f:
             gifs = [line.strip() for line in f]
             count = len(gifs)
             embed = discord.Embed(title="Message Count", description=f"{interaction.user.mention} - There are {count} messages in the ping trigger gifs file", color=0x00ffbd)
             embed.set_footer(text=EmbedFooter)
             await interaction.response.send_message(embed=embed)
+            with open("command_logs.txt", "a", encoding="utf-8") as f:
+                f.write(f"{datetime.now()} - {interaction.user} checked the gif count\n")
     except Exception as e:
         embed = discord.Embed(title="Error Code 2", description=f"Something has gone critically wrong. Contact the bot master immediately. Include what you were doing to cause the error to occur", color=0xff0000)
         embed.set_footer(text=EmbedFooter)
