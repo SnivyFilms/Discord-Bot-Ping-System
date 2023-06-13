@@ -80,7 +80,7 @@ async def self(interaction: discord.Interaction, gif:str):
     try:
         with open("gifs.txt", "a", encoding='utf-8') as f:
             f.write(gif + "\n")
-         with open("logs.txt", "a", encoding='utf-8') as f:
+        with open("logs.txt", "a", encoding='utf-8') as f:
             f.write(f"{datatime.now()} - {interaction.user} added a new gif: {gif}\n")
         embed = discord.Embed(title="New Ping Trigger Message", description=f"{interaction.user.mention} - You have sucessfully added a new gif", color=0x00ffbd)
         embed.set_footer(text=EmbedFooter)
