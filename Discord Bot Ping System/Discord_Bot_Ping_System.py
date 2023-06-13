@@ -63,7 +63,7 @@ async def self(interaction: discord.Interaction, message:str):
         with open("messages.txt", "a", encoding='utf-8') as f:
             f.write(message + "\n")
         with open("logs.txt", "a", encoding='utf-8') as f:
-            f.write(f"{datatime.now()} - {interaction.user} added a new message: {message}\n")
+            f.write(f"{datatime.now()} - {interaction.user} added a new message: {message} in {interaction.guild}\n")
         embed = discord.Embed(title="New Ping Trigger Message", description=f"{interaction.user.mention} - You have sucessfully added a new message: {message}", color=0x00ffbd)
         embed.set_footer(text= EmbedFooter)
         await interaction.response.send_message(embed=embed)
@@ -81,7 +81,7 @@ async def self(interaction: discord.Interaction, gif:str):
         with open("gifs.txt", "a", encoding='utf-8') as f:
             f.write(gif + "\n")
         with open("logs.txt", "a", encoding='utf-8') as f:
-            f.write(f"{datatime.now()} - {interaction.user} added a new gif: {gif}\n")
+            f.write(f"{datatime.now()} - {interaction.user} added a new gif: {gif} in {interaction.guild}\n")
         embed = discord.Embed(title="New Ping Trigger Message", description=f"{interaction.user.mention} - You have sucessfully added a new gif", color=0x00ffbd)
         embed.set_footer(text=EmbedFooter)
         embed.set_image(url=gif)
@@ -104,7 +104,7 @@ async def self(interaction: discord.Interaction):
             embed.set_footer(text=EmbedFooter)
             await interaction.response.send_message(embed=embed)
             with open("logs.txt", "a", encoding="utf-8") as f:
-                f.write(f"{datetime.now()} - {interaction.user} checked the message count\n")
+                f.write(f"{datetime.now()} - {interaction.user} checked the message count in {interaction.guild}\n")
     except Exception as e:
         embed = discord.Embed(title="Error Code 2", description=f"Something has gone critically wrong. Contact the bot master immediately. Include what you were doing to cause the error to occur", color=0xff0000)
         embed.set_footer(text=EmbedFooter)
@@ -121,7 +121,7 @@ async def self(interaction: discord.Interaction):
             embed.set_footer(text=EmbedFooter)
             await interaction.response.send_message(embed=embed)
             with open("logs.txt", "a", encoding="utf-8") as f:
-                f.write(f"{datetime.now()} - {interaction.user} checked the gif count\n")
+                f.write(f"{datetime.now()} - {interaction.user} checked the gif count in {interaction.guild}\n")
     except Exception as e:
         embed = discord.Embed(title="Error Code 2", description=f"Something has gone critically wrong. Contact the bot master immediately. Include what you were doing to cause the error to occur", color=0xff0000)
         embed.set_footer(text=EmbedFooter)
