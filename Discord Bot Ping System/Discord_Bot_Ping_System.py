@@ -120,7 +120,7 @@ async def self(interaction: discord.Interaction):
             embed = discord.Embed(title="Message Count", description=f"{interaction.user.mention} - There are {count} messages in the ping trigger gifs file", color=0x00ffbd)
             embed.set_footer(text=EmbedFooter)
             await interaction.response.send_message(embed=embed)
-            with open("command_logs.txt", "a", encoding="utf-8") as f:
+            with open("logs.txt", "a", encoding="utf-8") as f:
                 f.write(f"{datetime.now()} - {interaction.user} checked the gif count\n")
     except Exception as e:
         embed = discord.Embed(title="Error Code 2", description=f"Something has gone critically wrong. Contact the bot master immediately. Include what you were doing to cause the error to occur", color=0xff0000)
