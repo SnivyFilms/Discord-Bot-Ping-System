@@ -127,4 +127,4 @@ async def self(interaction: discord.Interaction):
         embed.set_footer(text=EmbedFooter)
         await interaction.response.send_message(embed=embed)
 
-client.run("MTEwMDc5MjEwNDEyNjUyOTU4OA.GO9LBB.u6lQwHDrzGpuQ7FjP1IwBfI0hppcfROGWfClf8")
+client.run("Bot Token")
