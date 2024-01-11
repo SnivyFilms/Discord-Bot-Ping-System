@@ -1,1 +1,19 @@
 2023-06-12 22:37:20.385598 - snivy_films#0 checked the gif count
+2023-10-17 13:26:30.031420 - snivy_films#0 checked the gif count in The Relaxation Station
+2023-11-14 22:18:36.280014 - snivy_films#0 checked the gif count in Deep Blue
+2023-12-09 16:23:06.378223 - snivy_films#0 checked the gif count in The Relaxation Station
+2024-01-10 08:30:51.295410 - snivy_films#0 checked the gif count in The Relaxation Station
+2024-01-10 11:29:24.229606 - snivy_films disabled the ping trigger in The Relaxation Station for 5 minutes
+2024-01-10 11:41:02.553269 - snivy_films used ChatGPT with the prompt tell me a joke in Deep Blue
+2024-01-10 17:42:14.053289 - snivy_films used ChatGPT with the prompt Tell me a recipe for buttermilk pancakes in Deep Blue
+2024-01-10 17:43:50.532704 - snivy_films disabled the ping trigger in Deep Blue for 5 minutes
+2024-01-10 17:57:28.551015 - snivy_films used ChatGPT with the prompt Name a few amtrak routes that someone that really enjoy trains would like to take in Deep Blue
+2024-01-11 07:59:13.600538 - weebazaki used ChatGPT with the prompt What is the competetive TF2 player Snivy Films best known for? in Snivy's Lounge
+2024-01-11 08:03:02.687339 - snivy_films disabled the ping trigger in Deep Blue for 5 minutes
+2024-01-11 08:03:37.125115 - weebazaki used ChatGPT with the prompt please explain if there is a correlation between people who play Medic in Team Fortress 2 and people with an above average intelligence in Snivy's Lounge
+2024-01-11 08:03:37.642670 - snivy_films used ChatGPT with the prompt Tell me a good recipe for making bacon in Deep Blue
+2024-01-11 08:07:07.106621 - weebazaki used ChatGPT with the prompt please write a bullet list of the five most interesting things that can be added to a discord bot in Snivy's Lounge
+2024-01-11 08:10:04.164139 - weebazaki used ChatGPT with the prompt please write a casual thank you sentence, thanking "Snivy" for adding a channel to her discord server. The message should be 1 sentence. in Snivy's Lounge
+2024-01-11 10:38:54.433109 - snivy_films used ChatGPT with the prompt tell me a joke in The Relaxation Station
+2024-01-11 10:40:17.905529 - snivy_films used ChatGPT with the prompt tell me another joke in The Relaxation Station
+2024-01-11 10:44:36.933347 - snivy_films used ChatGPT with the prompt Say hello world in an extremely crpytic way in Deep Blue
