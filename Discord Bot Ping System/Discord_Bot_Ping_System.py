@@ -161,7 +161,7 @@ async def disable_ping_trigger(interaction: discord.Interaction):
 async def update_log(interaction: discord.Interaction):
     embed = discord.Embed(
         title="Update Log",
-        description=f"{interaction.user.mention}\n With update 2.2.0 a new command has been added called /chatgpt which allows you to use chatgpt.",
+        description=f"{interaction.user.mention}\n With update 2.2.1 ChatGPT command has been updated with formatting for prompt and responces.\nWith update 2.2.0 a new command has been added called /chatgpt which allows you to use chatgpt.",
         color=0x00ffbd,
     )
     embed.set_footer(text=EmbedFooter)
@@ -201,4 +201,4 @@ async def ChatGPT(interaction: discord.Interaction, prompt:str):
         f.write(f"{datetime.now()} - {interaction.user} used ChatGPT with the prompt {prompt} in {interaction.guild}\n")
 
 
-client.run("Bot Token Here")
+client.run("Bot Token")
