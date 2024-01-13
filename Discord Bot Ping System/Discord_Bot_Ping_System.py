@@ -22,7 +22,7 @@ last_embed_time = None
 
 intents = discord.Intents.default()
 client = MyClient(intents=intents)
-openai.api_key = "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"
+openai.api_key = "ChatGPT API Key"
 
 
 EmbedFooter = 'Serperior Pinging Services | Version 2.2.1 | -Snivy Films'

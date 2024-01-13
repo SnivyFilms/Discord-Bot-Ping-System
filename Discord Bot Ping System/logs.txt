@@ -17,3 +17,4 @@
 2024-01-11 10:38:54.433109 - snivy_films used ChatGPT with the prompt tell me a joke in The Relaxation Station
 2024-01-11 10:40:17.905529 - snivy_films used ChatGPT with the prompt tell me another joke in The Relaxation Station
 2024-01-11 10:44:36.933347 - snivy_films used ChatGPT with the prompt Say hello world in an extremely crpytic way in Deep Blue
+2024-01-11 11:23:31.831801 - snivy_films disabled the ping trigger in Deep Blue for 5 minutes
